@@ -1,12 +1,10 @@
 ---
-title: a gentle beginning
+title: newsletter
 date: 2025-10-13
-excerpt: First notes on making a quiet space for design, research, and communication.
+excerpt: tktktk
 draft: false
 ---
 
-This is a lightly-styled journal entry. Replace me with your own writing, sketches, or process notes.
+Newsletter update
 
-- Keep posts simple and reflective.
-- Drop in line illustrations or photos as needed.
-- Use this space as a working log for projects.
+- Newlsetter to come
