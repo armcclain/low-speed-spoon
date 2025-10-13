@@ -1,0 +1,8 @@
+---
+const { title, blurb = "", href = "#", meta = "" } = Astro.props;
+---
+<a href={href} class="block border rounded-2xl p-4 hover:shadow-md transition">
+  <h3 class="text-base font-medium mb-1">{title}</h3>
+  {blurb && <p class="text-sm text-gray-600">{blurb}</p>}
+  {meta && <p class="mt-2 text-xs text-gray-500">{meta}</p>}
+</a>

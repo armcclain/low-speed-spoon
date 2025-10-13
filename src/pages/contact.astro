@@ -1,0 +1,21 @@
+---
+import Layout from '../layouts/BaseLayout.astro';
+import NewsletterForm from '../components/NewsletterForm.astro';
+---
+<Layout title="Contact — the low-speed spoon" theme="theme-contact">
+  <section class="mx-auto max-w-3xl px-4 py-16 prose">
+    <h1>contact</h1>
+    <br>
+
+    <p>drop a line to me via email and see what else i've been up to on my academic website and instagram.</p>
+    <br>
+    <ul>
+      <li>email: <a href="mailto:amcclain@gwu.edu">amcclain@gwu.edu</a></li>
+      <li>website: <a href="https://armcclain.github.io"> academic updates </a></li>
+      <li>instagram: <a href="https://instagram.com/the_primate_diaries">@the_primate_diaries</a></li>
+    </ul>
+  </section>
+  <Fragment slot="newsletter">
+    <NewsletterForm />
+  </Fragment>
+</Layout>

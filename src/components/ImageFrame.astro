@@ -1,0 +1,6 @@
+---
+const { src, alt = "" } = Astro.props;
+---
+<figure class="border rounded-2xl overflow-hidden">
+  <img src={src} alt={alt} class="w-full h-auto block" />
+</figure>

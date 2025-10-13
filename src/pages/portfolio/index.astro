@@ -1,0 +1,20 @@
+---
+import Layout from '../../layouts/BaseLayout.astro';
+import ProjectCard from '../../components/ProjectCard.astro';
+---
+<Layout title="Portfolio — the low-speed spoon" theme="theme-portfolio">
+  <section class="mx-auto max-w-6xl px-4 py-16">
+    <h1 class="text-xl font-medium mb-6">portfolio</h1>
+    <div class="mb-8 text-sm">
+      <ul class="flex gap-4">
+        <li><a class="underline" href="/portfolio/personal">personal</a></li>
+        <li><a class="underline" href="/portfolio/professional">professional</a></li>
+        <li><a class="underline" href="/portfolio/academic">academic</a></li>
+      </ul>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <ProjectCard title="sample project" blurb="A placeholder card for layout testing." href="/portfolio/personal" meta="category: personal" />
+    </div>
+  </section>
+</Layout>
