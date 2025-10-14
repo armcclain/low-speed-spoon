@@ -5,7 +5,7 @@ import { $ as $$BaseLayout } from '../chunks/BaseLayout_CrPfhnK6.mjs';
 export { renderers } from '../renderers.mjs';
 
 const $$Index = createComponent(($$result, $$props, $$slots) => {
-  return renderTemplate`${renderComponent($$result, "Layout", $$BaseLayout, { "title": "the low-speed spoon" }, { "default": ($$result2) => renderTemplate` ${maybeRenderHead()}<section class="mx-auto max-w-6xl px-4 py-24"> <div class="grid place-items-center"> <div class="w-full max-w-sm"> <!-- Replace the src with your final logo path --> <img src="/assets/Low_Speed_Spoon.png" alt="the low-speed spoon logo" class="w-full h-auto"> </div> <div class="mt-10 text-xs lowercase tracking-widest text-gray-500"> <!-- intentionally minimal, no tagline per your preference --> </div> </div> </section> ` })}`;
+  return renderTemplate`${renderComponent($$result, "Layout", $$BaseLayout, { "title": "the low-speed spoon" }, { "default": ($$result2) => renderTemplate` ${maybeRenderHead()}<section class="mx-auto max-w-4xl px-4 py-24"> <div class="grid place-items-center"> <br> <br> <div class="w-50px mx-auto"> <img src="/assets/Low_Speed_Spoon.png" alt="the low-speed spoon logo" class="w-auto h-auto"> </div> <div class="mt-10 text-xs lowercase tracking-widest text-gray-500"></div> </div> </section> ` })}`;
 }, "/Users/abigailmcclain/low-speed-spoon/src/pages/index.astro", void 0);
 
 const $$file = "/Users/abigailmcclain/low-speed-spoon/src/pages/index.astro";

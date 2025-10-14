@@ -16,7 +16,7 @@ import Layout from './BaseLayout.astro';`;
 const $$Astro = createAstro("https://YOUR_USERNAME.github.io/low-speed-spoon");
 const Astro = $$Astro;
 async function getStaticPaths() {
-  const posts = await Astro.glob(/* #__PURE__ */ Object.assign({"../../content/blog/a-gentle-beginning.md": () => import('../../chunks/a-gentle-beginning_DgdtPnzm.mjs')}), () => "../../content/blog/*.md");
+  const posts = await Astro.glob(/* #__PURE__ */ Object.assign({"../../content/blog/a-gentle-beginning.md": () => import('../../chunks/a-gentle-beginning_vp8AOxzE.mjs')}), () => "../../content/blog/*.md");
   return posts.map((post) => {
     const file = post.file || "";
     const slug = file.split("/").pop()?.replace(/\.md$/, "") || "post";

@@ -2,6 +2,8 @@
 const { title = "the low-speed spoon", theme = "" } = Astro.props;
 ---
 <html lang="en">
+
+
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -11,6 +13,8 @@ const { title = "the low-speed spoon", theme = "" } = Astro.props;
     <link rel="stylesheet" href="/src/styles/base.css" />
     <link rel="stylesheet" href="/src/styles/themes.css" />
   </head>
+
+
   <body class={`${theme}`}>
     <header class="w-full">
       <div class="mx-auto max-w-6xl px-4 py-4 flex items-center justify-between">

@@ -2,13 +2,13 @@ import { c as createComponent, m as maybeRenderHead, u as unescapeHTML, a as ren
 import 'kleur/colors';
 import 'clsx';
 
-const html = "<p>This is a lightly-styled journal entry. Replace me with your own writing, sketches, or process notes.</p>\n<ul>\n<li>Keep posts simple and reflective.</li>\n<li>Drop in line illustrations or photos as needed.</li>\n<li>Use this space as a working log for projects.</li>\n</ul>";
+const html = "<p>Newsletter update</p>\n<ul>\n<li>Newlsetter to come</li>\n</ul>";
 
-				const frontmatter = {"title":"a gentle beginning","date":"2025-10-13T00:00:00.000Z","excerpt":"First notes on making a quiet space for design, research, and communication.","draft":false};
+				const frontmatter = {"title":"newsletter","date":"2025-10-13T00:00:00.000Z","excerpt":"tktktk","draft":false};
 				const file = "/Users/abigailmcclain/low-speed-spoon/src/content/blog/a-gentle-beginning.md";
 				const url = undefined;
 				function rawContent() {
-					return "\nThis is a lightly-styled journal entry. Replace me with your own writing, sketches, or process notes.\n\n- Keep posts simple and reflective.\n- Drop in line illustrations or photos as needed.\n- Use this space as a working log for projects.\n";
+					return "\nNewsletter update\n\n- Newlsetter to come\n";
 				}
 				function compiledContent() {
 					return html;
