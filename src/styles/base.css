@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom font-face example (update with your font files in /public/fonts) */
+/*
+@font-face {
+  font-family: 'LSSHand';
+  src: url('/fonts/LSSHand.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+*/
+
+:root {
+  --page-bg: #ffffff;
+  --page-fg: #0a0a0a;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  background: var(--page-bg);
+  color: var(--page-fg);
+  @apply antialiased;
+}
+
+/* Minimal typographic rhythm */
+.prose p { @apply leading-relaxed; }
+.prose h1, .prose h2, .prose h3 { @apply font-medium tracking-tight; }
+
+

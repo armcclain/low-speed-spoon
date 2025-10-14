@@ -1,0 +1,14 @@
+---
+// Replace with your provider embed or a simple form action to Buttondown/Substack/Mailchimp.
+const { provider = "buttondown" } = Astro.props;
+---
+<div class="flex items-center gap-2">
+  <form class="flex items-center gap-2"
+        action="https://buttondown.email/api/emails/embed-subscribe/YOUR_USERNAME"
+        method="post"
+        target="popupwindow"
+        onsubmit="window.open('https://buttondown.email/YOUR_USERNAME', 'popupwindow')">
+    <input class="border rounded px-2 py-1 text-sm" type="email" name="email" placeholder="email for updates" required />
+    <button class="border rounded px-3 py-1 text-sm" type="submit">Subscribe</button>
+  </form>
+</div>

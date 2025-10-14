@@ -1,0 +1,23 @@
+/* Simple theme hooks per page; swap these with your imagery/colors later */
+
+.theme-about {
+  --page-bg: #faf6f1; /* warm off-white */
+  --page-fg: #1a1a1a;
+}
+
+.theme-blog {
+  --page-bg: #f1f6fa; /* cool light blue */
+  --page-fg: #0f172a;
+}
+
+.theme-portfolio {
+  --page-bg: #f7f4fb; /* soft lavender */
+  --page-fg: #0f0f0f;
+}
+
+.theme-contact {
+  --page-bg: #f3f7f2; /* pale green */
+  --page-fg: #111827;
+}
+
+/* Landing page stays B/W, so no theme class needed there */

@@ -1,0 +1,37 @@
+---
+import { getCollection } from "astro:content";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+
+export async function getStaticPaths() {
+  const posts = await getCollection("blog");
+  return posts.map((post) => ({ params: { slug: post.slug } }));
+}
+
+const { slug } = Astro.params;
+const posts = await getCollection("blog");
+const post = posts.find((p) => p.slug === slug);
+
+if (!post) {
+  throw new Error(`Post not found for slug: ${slug}`);
+}
+
+// Render the Markdown content and destructure safely
+const rendered = await post.render();
+const Content = rendered.Content;
+const data = rendered.data || post.data || {};
+---
+
+<BaseLayout title={data.title ?? "Untitled"}>
+  <article class="mx-auto max-w-3xl px-6 py-16 prose prose-gray">
+    <a href={`${import.meta.env.BASE_URL}blog/`} class="text-sm text-gray-500 hover:underline block mb-8">
+      ← Back to all posts
+    </a>
+    <h1 class="text-3xl font-bold mb-4">{data.title ?? "Untitled"}</h1>
+    {data.date && (
+      <p class="text-gray-500 text-sm mb-8">
+        {new Date(data.date).toLocaleDateString()}
+      </p>
+    )}
+    <Content />
+  </article>
+</BaseLayout>

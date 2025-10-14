@@ -1,0 +1,35 @@
+---
+import { getCollection } from "astro:content";
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+const posts = await getCollection("blog");
+const sortedPosts = posts.sort(
+  (a, b) => b.data.date.valueOf() - a.data.date.valueOf()
+);
+---
+
+<BaseLayout title="newsletter">
+  <section class="mx-auto max-w-3xl px-4 py-16 prose">
+      <h1 class="text-xl font-medium mb-6">newsletter</h1>
+    <br>
+
+    {sortedPosts.length === 0 ? (
+      <p class="text-gray-600">No posts yet — check back soon!</p>
+    ) : (
+      <ul class="space-y-8">
+        {sortedPosts.map((post) => (
+          <li>
+            <a href={`${import.meta.env.BASE_URL}blog/${post.slug}/`} class="block hover:underline text-xl font-semibold">
+
+            <p class="text-gray-500 text-sm">
+              {post.data.date.toLocaleDateString()}
+            </p>
+            {post.data.description && (
+              <p class="mt-2 text-gray-700">{post.data.description}</p>
+            )}
+          </li>
+        ))}
+      </ul>
+    )}
+  </section>
+</BaseLayout>
