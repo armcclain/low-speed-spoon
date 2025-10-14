@@ -31,3 +31,5 @@ body {
 /* Minimal typographic rhythm */
 .prose p { @apply leading-relaxed; }
 .prose h1, .prose h2, .prose h3 { @apply font-medium tracking-tight; }
+
+
