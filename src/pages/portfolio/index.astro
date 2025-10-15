@@ -1,6 +1,7 @@
 ---
 import Layout from '../../layouts/BaseLayout.astro';
 import ProjectCard from '../../components/ProjectCard.astro';
+import NewsletterForm from '../../components/NewsletterForm.astro';
 ---
 <Layout title="Portfolio — the low-speed spoon" theme="theme-portfolio">
   <section class="mx-auto max-w-3xl px-4 py-16 prose">
@@ -18,5 +19,20 @@ import ProjectCard from '../../components/ProjectCard.astro';
 <ProjectCard title="sample project" blurb="a placeholder card for layout testing." href={`${import.meta.env.BASE_URL}portfolio/personal`} meta="category: personal" />
     
     </div>
+
   </section>
+  <Fragment slot="newsletter">
+  <div class="not-prose my-12">
+      <img
+        src={`${import.meta.env.BASE_URL}assets/separators/spoon.png`}
+        alt=""
+        role="presentation"
+        class="mx-auto block opacity-90"
+        style="width:200px;max-width:none;"
+      />
+    </div>
+    <NewsletterForm />   
+  </Fragment>
 </Layout>
+
+
