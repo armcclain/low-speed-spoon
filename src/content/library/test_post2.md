@@ -33,7 +33,7 @@ description: "dictionary"
     <ul class="list-none text-sm opacity-80 pl-0">
       <li><strong>synonyms:</strong> <em>tablespoon, the big one</em></li>
        <li><strong>antonym:</strong> <em>low-speed spoon</em></li>
-      <li><strong>etymology:</strong> compound; familial dialect possible origination by g.u.d. or d.t. in the 1950s-60s</li>
+      <li><strong>etymology:</strong> compound; familial dialect origination by d.m 1950s-60s from needing to eat quickly while on naval ships</li>
     </ul>
   </div>
 
