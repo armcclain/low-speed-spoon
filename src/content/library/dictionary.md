@@ -1,6 +1,6 @@
 ---
 title: "dictionary"
-date: 2026-2-17
+date: 2026-02-17
 description: "dictionary"
 ---
 <section class="prose mx-auto max-w-3xl px-4 py-8">

@@ -1,5 +1,5 @@
 ---
-title: "Markdown Formatting Reference"
+title: "markdown formatting eference"
 date: 2025-10-14
 description: "style guide for markdown"
 ---
