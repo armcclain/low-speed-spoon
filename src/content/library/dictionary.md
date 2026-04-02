@@ -78,7 +78,7 @@ description: "dictionary"
       <span class="text-sm"><strong>n. / idiolect</strong></span>
     </h3>
     <p>1. <strong>the remote control</strong> — a piece of equipment held in the hand and used to control a television, media player, or similar electronic interface.</p>
-    <p>2. <strong>a hidden interface</strong> — a device where the internal mechanisms are obscured, leaving only the result visible.</p>
+  
     <p class="italic opacity-90 my-4">"can you find the magic box? i want to see if star trek is on."</p>
     <ul class="list-none text-sm opacity-80 pl-0">
       <li><strong>synonyms:</strong> <em>clicker, remote, flipper</em></li>
