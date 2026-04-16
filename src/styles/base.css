@@ -28,7 +28,7 @@ body {
   color: var(--page-fg);
 
   /* Path to your watercolor texture file */
-  background-image: url('/assets/preview_bg.jpeg');
+  background-image: url('assets/newbgprev.jpeg');
   
   
   /* Essential for the "paper" look */
