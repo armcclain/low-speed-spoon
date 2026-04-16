@@ -30,6 +30,7 @@ body {
   /* Path to your watercolor texture file */
   background-image: url('/assets/preview_bg.jpeg');
   
+  
   /* Essential for the "paper" look */
   background-repeat: repeat;
   background-size: 600px; /* Adjust this to scale the "grain" size */
