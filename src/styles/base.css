@@ -2,12 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Custom font-face example (update with your font files in /public/fonts) */
+/*
+@font-face {
+  font-family: 'LSSHand';
+  src: url('/fonts/LSSHand.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+*/
+
 :root {
-  /* Warm white typical of cold-press watercolor paper */
-  --page-bg: #fdfaf6; 
-  --page-fg: #1a1a1a;
-  /* Subtle gray-blue for the paper "shadows" */
-  --paper-grain: rgba(0, 0, 0, 0.04); 
+  --page-bg: #ffffff;
+  --page-fg: #0a0a0a;
 }
 
 html, body {
@@ -15,21 +23,26 @@ html, body {
 }
 
 body {
+  /* The color comes from your theme classes */
   background-color: var(--page-bg);
   color: var(--page-fg);
+
+  /* Path to your watercolor texture file */
+  background-image: url('public/assets/preview_bg.jpeg');
   
-  /* Layering the texture */
-  background-image: 
-    /* Layer 1: Subtle lighting variation */
-    radial-gradient(circle at 50% 0%, rgba(255,255,255,0.5), transparent),
-    /* Layer 2: The fractal noise grain */
-    url("data:image/svg+xml,%3Csvg viewBox='0 0 250 250' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
-  
-  /* This blends the SVG noise into the background color */
+  /* Essential for the "paper" look */
+  background-repeat: repeat;
+  background-size: 600px; /* Adjust this to scale the "grain" size */
   background-blend-mode: multiply;
   
-  @apply antialiased;
+  /* Fixes the paper in place so only the text scrolls */
+  background-attachment: fixed;
+
+  @apply transition-colors duration-500 antialiased;
 }
 
+/* Minimal typographic rhythm */
 .prose p { @apply leading-relaxed; }
 .prose h1, .prose h2, .prose h3 { @apply font-medium tracking-tight; }
+
+
